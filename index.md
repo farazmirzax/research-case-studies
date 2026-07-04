@@ -1,35 +1,28 @@
 ---
+layout: default
 title: Home
-layout: home
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# Investigating Trust and Reliability in AI
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+Welcome to my research documentation space. I am Faraz Mirza, a developer and AI engineer focused on the intersection of deep learning infrastructure and artificial intelligence safety. 
 
-More specifically, the created site:
+While deploying autonomous multi-agent systems and deepfake detection pipelines, I encountered a recurring challenge: **building models that humans can fundamentally trust.** My current research investigations focus on moving beyond pure performance metrics to prioritize interpretability, safety, and deterministic validation.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+## Core Research Themes
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+This repository serves as a live documentation of my findings, architectural experiments, and failure analyses across three primary domains:
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+### 1. Explainable AI (XAI) in Computer Vision
+Neural networks operate as "black boxes," creating an interpretability problem for forensic analysis. My work investigates the fusion of probabilistic Vision Transformer (ViT) inference with deterministic mathematical verification to create auditable, transparent decision-making processes.
 
-To get started with creating a site, simply:
+### 2. Multi-Agent Validation and Hallucination Mitigation
+Autonomous LLM workflows are prone to cascading hallucinations. I explore iterative validation loops, agentic red-teaming, and architectural constraints (via LangGraph and FAISS) to ensure reliable, leakage-free outputs in complex reasoning tasks.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+### 3. Spatial and Temporal Limits of Foundational Models
+Evaluating the boundaries of existing architectures, from the spatial limitations of CNNs to the practical constraints of fine-tuning Hugging Face models for dynamic threat detection.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+---
 
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+*Navigate through the sidebar to explore specific case studies, mathematical frameworks, and architectural post-mortems derived from my engineering implementations.*
